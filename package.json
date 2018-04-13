@@ -1,0 +1,14 @@
+{
+  "name": "plugin-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build:main && npm run build:jquery",
+    "build:main": "bili src/appname.js --filename [name][suffix].js --format es,umd,umd-min",
+    "build:jquery": "bili src/jquery.appname.js --filename jquery.[name][suffix].js --format umd,umd-min"
+  },
+  "devDependencies": {
+    "bili": "^3.0.15"
+  }
+}
